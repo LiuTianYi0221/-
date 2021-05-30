@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面试人员工作表</title>
+    
+</head>
+<body>
+    <font size ="6">面试人员信息登记</font>
+    
+    <form>
+        <fieldset>
+        <legend>面试信息</legend>
+        应聘职位：<input type="text"name="username"placeholder ="请输入本次应聘的职位" size="20"/required  /><br />
+        期望月资：<input type="text" value=5000 min="3000"max="10000" size="8" /required/><br /> 
+        </fieldset>
+    
+
+    
+            <fieldset>
+            <legend>基本信息</legend>
+            姓名：<input type="text" size="20" /required /><br />
+            <td width="200">性别</td>
+            <td width="200"/>
+                <input type="radio" name="sex" value="男性"/required/>男性
+                <input type="radio" name="sex" value="女性"/required/>女性
+                </td>
+           <div class="生日：">
+				<label for="date">生日：</label>
+				<input type="date" name="date" id="date" value="" /required/>
+			</div>
+            籍贯：<input type="text"name="username"placeholder ="请选择或输入籍贯" size="20"  /required/><br />
+            证件：<input type="text"name="username"placeholder ="请输入身份证号"step="18" size="20"  /required/><br />
+            </fieldset>
+            
+
+      
+                <fieldset>
+                <legend>联系方式</legend>
+                电话：<input type="text"name="username"placeholder ="请输入电话号码"min="6" max="20" size="20"  /required/><br />
+                邮箱：<input type="text"name="username"placeholder ="请输入电子邮箱" size="20"  /required/><br />
+                住址：<input type="text"name="username"placeholder ="请输入住址" size="20"  /required/><br />
+                </fieldset>
+               
+
+                
+                    <fieldset>
+                    <legend>教学背景</legend>
+                    <td>学历</td>
+                <td> <select name="carlist" form="carform">
+                    <option value="大本">大本</option>
+                    <option value="大专">大专</option>
+                    <option value="高中">高中</option>
+                    <option value="中专">中专</option>
+                 </select> </td><br/>
+                    学校：<input type="text"name="username"placeholder ="请输入毕业学校" size="20"  /required/><br />
+                    专业：<input type="text"name="username"placeholder ="请输入专业" size="20"  /required/><br />
+                    <div class="毕业时间：">
+                        <label for="date">毕业时间：</label>
+                        <input type="date" name="date" id="date" value="" /required/>
+                    </div>
+                    </fieldset>
+                   
+
+                    
+                        <fieldset>
+                        <legend>工作经历</legend>
+                        请按时间倒序填写最近从业的三次经历<br/>
+                        单位名称：<input type="text"name="username"placeholder ="单位名称" size="20" 
+                        div class="时间：">
+                            <label for="date">入职时间：</label>
+                            <input type="date" name="date" id="date" value="" />
+                            <label for="date">离职时间：</label>
+                            <input type="date" name="date" id="date" value=""/>
+                            职位：<input type="text"name="username"placeholder ="职位" size="20" >
+                            月薪：<input type="text"name="username"placeholder ="月薪" size="20" >
+                            <td width="200" rowspan="4"></td>
+                <td width="200" colspan="3" rowspan="4">
+                    <textarea name="" id="" cols="60" rows="2" style="font: size 10px;">职责描述
+                    </textarea><br/>
+                    单位名称：<input type="text"name="username"placeholder ="单位名称" size="20" 
+                        div class="时间：">
+                            <label for="date">入职时间：</label>
+                            <input type="date" name="date" id="date" value="" />
+                            <label for="date">离职时间：</label>
+                            <input type="date" name="date" id="date" value=""/>
+                            职位：<input type="text"name="username"placeholder ="职位" size="20" >
+                            月薪：<input type="text"name="username"placeholder ="月薪" size="20" >
+                            <td width="200" rowspan="4"></td>
+                <td width="200" colspan="3" rowspan="4">
+                    <textarea name="" id="" cols="60" rows="2" style="font: size 10px;">职责描述
+                    </textarea><br/>
+                    单位名称：<input type="text"name="username"placeholder ="单位名称" size="20" 
+                        div class="时间：">
+                            <label for="date">入职时间：</label>
+                            <input type="date" name="date" id="date" value="" />
+                            <label for="date">离职时间：</label>
+                            <input type="date" name="date" id="date" value=""/>
+                            职位：<input type="text"name="username"placeholder ="职位" size="20" >
+                            月薪：<input type="text"name="username"placeholder ="月薪" size="20" >
+                            <td width="200" rowspan="4"></td>
+                <td width="200" colspan="3" rowspan="4">
+                    <input type="text"name="username"placeholder ="职责描述" size="20" >
+                    <textarea name="" id="" cols="60" rows="2" style="font: size 10px;">职责描述
+                    </textarea>
+                </td>
+            </div> <br />
+         </fieldset>
+    
+           <tr>
+            <td width="200" rowspan="3">自我评价</td><br/>
+            <td width="1000" colspan="4" rowspan="4">
+                <textarea name="" id="" cols="100" rows="10" style="font-size:10px">自我评价
+                </textarea>
+            </td>
+        </tr>
+        <br/>
+            <input type="checkbox" name="checkbox" οnchange="checkcb()" //required/>
+				<label>
+					本人承诺：以上所有信息均如实填写，如有不实，本人承担一切后果
+				</label>
+				<span id="checktext4"></span>
+				<br />
+                <tr>
+                    <td width="200" colspan="4" >
+                        <button type="button" onclick="window.location.href ='login.html'">提交</button>
+                        <input type="reset" value="重置"/></td>
+            </td>
+        </tr>
+         </from>
+  </body>
+</html>
